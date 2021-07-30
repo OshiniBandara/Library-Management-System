@@ -1,0 +1,74 @@
+<body>
+
+    <div class="split left">
+      <div class="centered">
+        <img src="/assets/IMG/k.jpg" alt="Admin">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><h3>Admin Login</h3></button>
+        
+      </div>
+    </div>
+    
+    <div class="split right">
+      <div class="centered">
+        <img src="/assets/IMG/k2.png" alt="student">
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><h3>Student Login</h3></button>
+        
+      </div>
+    </div>
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="/assets/IMG/5.png" alt="user" class="user" height="50" width="50">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input [(ngModel)]="aun" name="aun" type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input [(ngModel)]="apsw" name="apsw" type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit" name="menu" id="menu" (click)="submitAuth()" value="RUN">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button"  class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <div id="id02" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="/assets/IMG/5.png" alt="user" class="user" height="50" width="50">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" [(ngModel)]="sun" name="sun" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" [(ngModel)]="spsw" name="spsw" placeholder="Enter Password" name="psw" required>
+            
+         <button type="submit" class="btn btn-success" name="menustudent" id="menustudent" (click)="submitSu()" value="RUN"><h3>Login</h3></button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button"  class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    </body>
+     <!-- <router-outlet></router-outlet>   -->
+    

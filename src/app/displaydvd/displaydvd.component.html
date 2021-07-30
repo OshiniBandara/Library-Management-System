@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="panel">
+  <div class="p-3 mb-2 bg-success text-white"><h2>Display Details</h2></div>
+  
+  <form *ngFor="let dvd of dvds">
+           
+    <div class="form-group">
+      <label for="isbn"><h5><B>ISBN :</B></h5></label>
+      <input type="isbn" class="form-control" id="isbn" value={{dvd.isbn}} name="isbn" placeholder="ISBN" required >
+    </div>
+    <!-- <button type="submit" class="btn btn-warning btn-lg" value="ok" (click)="display(dvd)">Display</button>
+    <br><br> -->
+    <div class="form-group">
+      <label for="type"><h5><B>Type :</B></h5></label>
+      <input type="text" class="form-control" id="type" value=" DVD">
+    </div>
+  
+    <div class="form-group" >
+      <label for="title"><h5><B>The Title :</B></h5></label>
+      <input type="text" class="form-control" id="title" value= {{dvd.title}} placeholder="Title of the Book" >
+    </div>
+    <hr>
+    <br><br>
+    <!-- <button type="submit" class="btn btn-primary btn-lg" value="ok">OK</button>
+    <div class="divider"></div>
+    <button type="reset" class="btn btn-danger btn-lg" value="Reset"> Reset </button> -->
+  </form>
+  <br><br>
+  <a routerLink="/display" routerLinkActive="active"><button type="submit" class="btn btn-dark" name="backdisplay" id="backdisplay" value="RUN"><h3>Back</h3></button></a>
+  </div></div>  
+  
+  

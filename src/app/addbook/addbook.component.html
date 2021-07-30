@@ -1,0 +1,61 @@
+
+
+<div class="container">
+    <div class="panel">
+        <div class="p-3 mb-2 bg-success text-white"><h2>Add a Book</h2></div>
+        <form >
+           
+              <div class="form-group"></div>
+              
+                <label for="isbn"><h5><B>ISBN :</B></h5></label>
+                <input type="isbn" [(ngModel)]="isbn" name="isbn" class="form-control" id="isbn"  placeholder="ISBN" required ng-trim="false"  >
+                <!-- <small  class="text-danger"    [class.d-none] ="isbn.valid || isbn.untouched"><h5>ISBN is required</h5></small> -->
+              
+            <div class="form-group">
+              <label for="title"><h5><B>The Title :</B></h5></label>
+              <input type="text" [(ngModel)]="title" name="title" class="form-control" id="title"  placeholder="Title of the Book" required ng-trim="false">
+            </div>
+            <div class="form-group">
+              <label for="sector"><h5><B>The Sector :</B></h5></label>
+              <input type="text" [(ngModel)]="sector" name="sector" class="form-control" id="sector"  placeholder="Sector" required ng-trim="false">
+            </div>
+            <div class="form-group">
+                <div class="form-group col-md-4">
+                <label for="publisheddate"><h5><B>Published Day :</B></h5></label>
+                <input type="text" [(ngModel)]="publishedday" name="publishedday" class="form-control" id="publishedday"   placeholder="DD" required ng-trim="false">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="publisheddate"><h5><B>Published Month :</B></h5></label>
+                  <input type="text" [(ngModel)]="publishedmonth" name="publishedmonth" class="form-control" id="publishedmonth"  placeholder="MM" required ng-trim="false">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="publisheddate"><h5><B>Published Year :</B></h5></label>
+                    <input type="text" [(ngModel)]="publishedyear" name="publishedyear" class="form-control" id="publishedyear"  placeholder="YYYY" required ng-trim="false">
+                  </div>
+                </div>
+             
+              
+              
+                <div class="form-group">
+                    <label for="author"><h5><B>Author :</B></h5></label>
+                    <input type="text" [(ngModel)]="author" name="author" class="form-control" id="author"  placeholder="author of the Book" required ng-trim="false">
+                  </div>
+                  <div class="form-group">
+                      <label for="publisher"><h5><B>Publisher :</B></h5></label>
+                      <input type="text" [(ngModel)]="publisher" name="publisher" class="form-control" id="publisher"  placeholder="Publisher of the Book" required ng-trim="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="numberofpages"><h5><B>Number Of Pages :</B></h5></label>
+                        <input type="text" [(ngModel)]="numberofpages" name="numberofpages" class="form-control" id="numberofpages"  placeholder="Number Of Pages" required ng-trim="false">
+                      </div>
+            
+                <mat-checkbox required><h4>Add This Book</h4></mat-checkbox><br><br>
+            
+            <button type="submit" class="btn btn-primary btn-lg"  value="Submit" (click)="addbook()"><h4>ADD</h4></button>
+            <div class="divider"></div>
+            <button type="reset" class="btn btn-danger btn-lg" value="Reset"><h4>RESET </h4></button>
+          </form>
+
+<br><br>
+<a routerLink="/add" routerLinkActive="active"><button type="submit" class="btn btn-dark" name="backbook" id="backbook" value="RUN"><h3>Back</h3></button></a>
+</div></div>

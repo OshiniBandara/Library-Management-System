@@ -1,0 +1,12 @@
+.panel{
+    padding-left:8%;
+    background-color: rgb(233, 240, 171);
+}
+.divider{
+    width:15px;
+ display:inline-block;
+}
+.dividerX{
+    width:20px;
+    display:inline-block;
+}

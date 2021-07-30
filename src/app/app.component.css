@@ -1,0 +1,31 @@
+.img{
+    height:20em;
+    background-size: cover;
+    width:auto;
+    background-image: url('/assets/IMG/103.jpg');
+    background-position: 50% 50%;
+} 
+body{
+    background-color: black;
+}
+/* .panel{
+    /* padding-left:8%;  */
+   /* background-color: black;
+   
+   
+}
+.img{
+   height:60em;
+    background-size: cover; 
+   width:auto;
+   background-color: black;
+   background-image: url('/assets/IMG/1000.jpeg');
+}    */ 
+
+ 
+/* .image{
+    height:40em;
+    background-size: cover;
+    width:auto;
+    background-image: url('/assets/IMG/103.jpg');
+}   */

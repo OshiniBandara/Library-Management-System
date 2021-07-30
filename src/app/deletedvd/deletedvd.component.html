@@ -1,0 +1,26 @@
+
+
+<div class="container">
+    <div class="panel">
+        <div class="p-3 mb-2 bg-success text-white"><h2>Delete a DVD</h2></div>
+        <form>
+           
+            <div class="form-group">
+              <label for="isbn"><h5><B>ISBN :</B></h5></label>
+              <input type="isbn" class="form-control" id="isbn" placeholder="ISBN" [(ngModel)]="isbn" name="isbn" required>
+            </div>
+          
+          <div class="form-group">
+            <label for="typeofitem"><h5><B>Type Of Item :</B></h5></label>
+            <input type="text" class="form-control" value="DVD">
+          </div>
+          
+          <mat-checkbox required><h4>Delete This DVD</h4></mat-checkbox><br><br>
+          <button type="submit" class="btn btn-primary btn-lg" value="Submit" (click)="delete(dvd)"><h4>Delete</h4></button>
+          <div class="divider"></div>
+          <button type="reset" class="btn btn-danger btn-lg" value="Reset"><h4>RESET </h4></button>
+        </form>
+
+<br><br>
+<a routerLink="/delete" routerLinkActive="active"><button type="submit" class="btn btn-dark" name="backdelbook" id="backdelbook" value="RUN"><h3>Back</h3></button></a>
+</div></div>

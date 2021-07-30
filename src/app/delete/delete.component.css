@@ -1,0 +1,11 @@
+.panel{
+    
+    background-color: rgb(200, 243, 243);
+    background-image: url('/assets/IMG/l3.jpg') ;
+    background-size: 1100px 1000px;
+    height:396px;
+}
+.divider{
+    width:15px;
+ display:inline-block;
+}
